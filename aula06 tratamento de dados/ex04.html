@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome ?')
+        var n1 = 2000.5
+
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras <br>`)
+        // Aqui ele usa .length dentro da concatenisação para falar a quantidade de letras que a variavel tem !
+        document.write(`Seu, <strong>${nome}</strong> em maiúsculas é ${nome.toUpperCase()} <br>`)
+        // Dessa forma  todas as letras de dentro da variavel sairão maiúsculas
+        document.write(`Olá, <strong>${nome}</strong> em minúsculas é ${nome.toLowerCase()} <br>`)
+        // Dessa forma  todas as letras de dentro da variavel sairão minúsculas
+        // o <strong> é apenas para deixar a letra em negrito e o <br> apenas para dar uma quebra de linha 
+        document.write(n1.toFixed(2).replace('.', ','))
+        document.write(n1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }))
+    </script>
+</body>
+
+</html>

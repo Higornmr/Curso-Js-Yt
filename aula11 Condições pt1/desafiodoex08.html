@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Qual o seu país de origem ?</h1>
+    <input type="text" name="txtorigem" id="txtorigem">
+    <input type="button" value="Verificar" onclick="conferir()">
+    <div id="res">
+
+    </div>
+    <script>
+        function conferir() {
+            var origem = window.document.querySelector('input#txtorigem')
+            var conf = String(origem.value)
+            var res = window.document.querySelector('div#res')
+            if (conf == "Brasil") {
+                res.innerHTML = `<p>O seu país é o ${conf} então você é Brasileiro !</p>`
+            } else {
+                res.innerHTML = `<p> Você é estrangeiro !</p>`
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

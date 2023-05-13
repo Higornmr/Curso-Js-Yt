@@ -1,0 +1,74 @@
+<!-- 
+    Tratamento de dados - Curso JavaScript #06
+
+Url: https://www.youtube.com/watch?v=OJgu_KCCUSY&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=10
+
+No primeiro exercicio:
+Guardando uma variavel, usando concatenização: em uma frase é 
+utilizado algo escrito e adicionado a varavial recebida
+
+--------------
+
+No segundo exercicio: 
+ele mostra como transformar uma string em number e number para string
+
+Number.parseInt(n)  dessa forma o valor pego o valor Inteiro ( 7.5 só vem 7 )
+Number.parseFloat(n)  dessa forma o valor é pego sendo real (quebrado ou inteiro) 
+Number(n) dessa forma o JS é que decide se ele vai usar o valor inteiro ou quebrado... 
+=> onde está o (n) vai o comando windo.prompt('Digite um número: ')
+
+Para converter number em string: 
+
+utiliza String(n) ex:
+
+window.alert('A soma dos valores é ' + String(s))
+=> (n) é a variavel 
+
+Ou
+
+n.toString ex:
+
+window.alert('A soma dos valores é ' + s.toString())
+=> (n) é a variavel 
+
+--------------
+
+No terceiro exercicio ele ensina como usar template string,
+ O template string é a forma de juntar uma fraze com uma variavel  de um jeito mais legivel e 
+ mais moderno
+
+exp: 
+
+ window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+  Obs: é importante estar entre as crase ` ` 
+
+--------------
+
+  No quarto exercicio ele demonstra como usar write, serve para mostrar a informação na tela 
+  não no alert
+  
+  E no exercicio ele usa o length, toUpperCase e toLowerCase exp:
+
+  O length fala a quantidade de letras que tem na variavel ex: ${nome.length} 
+
+  O toUpperCase deixa todas letras da variavel em maiúsculas ex ${nome.toUpperCase()}
+ 
+  O toLowerCase deixa todas letras da variavel em minúsculas ex ${nome.toLowerCase()}
+
+
+  o nome é a variavel
+  Obs: Para o toLowerCase e o toUpperCase é importante ter () no final 
+
+----------------
+
+No quinto exercicio ele mostra o toFixed e o replace e como colocar o valor e o simbolo da moeda:
+o toFixed mostra a quantidade de numeros decimal que voce coloca ex:
+n1.toFixed(2)
+
+o replace muda por exemplo o . por , exp:
+document.write(n1.toFixed(2).replace('.', ','))
+
+n1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})
+
+o n1 é a variavel
+-->
